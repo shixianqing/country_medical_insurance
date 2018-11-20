@@ -1,6 +1,10 @@
 from selenium import webdriver
 
-b = webdriver.Chrome()
-b.get("http://app1.sfda.gov.cn/datasearchcnda/face3/search.jsp?tableId=25&State=1&bcId=152904713761213296322795806604")
-page = b.page_source
-print(page)
+def read_time_out_url():
+    lines = []
+    with open("E:\\spilder\\country_medical_insurance\\country_medical_insurance\\spiders\\time_out_url.txt") as file:
+      lines = file.readlines()
+      print(lines)
+
+    return lines
+
