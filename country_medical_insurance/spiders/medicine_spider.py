@@ -1,15 +1,12 @@
 # -*- coding: utf-8 -*-
-import scrapy
-import chardet
-import country_medical_insurance.util.fileUtil as util
 from country_medical_insurance.util.redisUtil import Jedis
-import re
 from scrapy.http.request import Request
 from fake_useragent import UserAgent
 from scrapy.selector import Selector
 from country_medical_insurance.items import CountryMedicalInsuranceItem
 from scrapy_redis.spiders import RedisSpider
 from selenium import webdriver
+import country_medical_insurance.util.fileUtil as fileUtil
 ua = UserAgent()
 
 class MedicineSpider(RedisSpider):
@@ -18,7 +15,8 @@ class MedicineSpider(RedisSpider):
     url_pattern = 'http://app1.sfda.gov.cn/datasearchcnda/face3/search.jsp?tableId=25&State=1&bcId=152904713761213296322795806604&curstart={}'
     # start_urls = []
     redis_key = 'medicineSpider:start_urls'
-
+    uls = fileUtil.read_time_out_url()
+    for line in uls:Jedis().client.lpush(redis_key,line.replace("\n", ""))
     for i in range(1,11111):Jedis().client.lpush(redis_key,url_pattern.format(i))#11111
 
     def __init__(self):
@@ -36,6 +34,8 @@ class MedicineSpider(RedisSpider):
               u = "http://app1.sfda.gov.cn/datasearchcnda/face3/"+a_el.split(",")[1].replace("'", "")
               self.log("detail_url------------->>>{}".format(u))
               yield Request(url=u,callback=self.parse_item,dont_filter=True)
+       else:
+           self.parse_item(response)
 
 
     def parse_item(self, response):
