@@ -11,6 +11,7 @@ import scrapy
 class CountryMedicalInsuranceItem(scrapy.Item):
 
    info = scrapy.Field()
+   url = scrapy.Field()
 
 
 

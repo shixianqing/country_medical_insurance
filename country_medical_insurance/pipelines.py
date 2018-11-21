@@ -6,6 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import country_medical_insurance.dbtool as db
+from country_medical_insurance.util.fileUtil import writeFile
 
 class CountryMedicalInsurancePipeline(object):
 
@@ -20,8 +21,13 @@ class CountryMedicalInsurancePipeline(object):
               "prod_type,allow_date,origin_allow_no,medicine_ben_code,code_remark) " \
               "values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
         print("sql---===========>>>" + sql)
-        self.pool.insert(sql, param=tuple(tuple(info)))
-        self.pool.end("commit")
+        try:
+            self.pool.insert(sql, param=tuple(tuple(info)))
+            self.pool.end("commit")
+        except BaseException as e:
+            # print(e)
+            print("数据插入失败！")
+            writeFile(url=item["url"], fileName="exception.txt")
         return item
 
 class ForeigeMedicinePipeline(object):
@@ -30,3 +36,6 @@ class ForeigeMedicinePipeline(object):
 
         print("item----------->>>>{}".format(item["medicine_info"]))
         return item
+
+
+writeFile(url="".join(tuple((1,2,3))), fileName="exception.txt")

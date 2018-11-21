@@ -8,3 +8,7 @@ def read_time_out_url():
 
     return lines
 
+def writeFile(self, url, fileName):
+    with open(file=fileName, mode="a", encoding="utf-8") as file:
+        file.write(url)
+        file.write("\n")

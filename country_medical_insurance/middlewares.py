@@ -117,7 +117,7 @@ class CustomDownloaderMiddleware(object):
         except TimeoutException as e:
             print('超时')
             self.writeFile(url, "time_out_url1.txt")
-            spider.browser.execute_script('window.stop()')
+            # spider.browser.execute_script('window.stop()')
         time.sleep(2)
         html = spider.browser.page_source
         # spider.browser.close()
