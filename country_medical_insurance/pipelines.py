@@ -15,6 +15,7 @@ class CountryMedicalInsurancePipeline(object):
     def process_item(self, item, spider):
 
         info = item["info"]
+        if info is None or len(info) == 0: writeFile(url=item["url"],fileName="E:\spilder\country_medical_insurance\country_medical_insurance\exception\exeu.ext")
         print("info--------------->>>>{}".format(info))
 
         sql = "insert into country_medicine(allow_no,medicine_name,en_name,trade_name,form,medicine_size,prod_unit,prod_addr," \
@@ -27,7 +28,7 @@ class CountryMedicalInsurancePipeline(object):
         except BaseException as e:
             # print(e)
             print("数据插入失败！")
-            writeFile(url=item["url"], fileName="exception.txt")
+            writeFile(url=item["url"], fileName="E:\spilder\country_medical_insurance\country_medical_insurance\exception\exeu.ext")
         return item
 
 class ForeigeMedicinePipeline(object):
@@ -38,4 +39,3 @@ class ForeigeMedicinePipeline(object):
         return item
 
 
-writeFile(url="".join(tuple((1,2,3))), fileName="exception.txt")

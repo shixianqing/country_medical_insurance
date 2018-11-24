@@ -126,7 +126,13 @@ class CustomDownloaderMiddleware(object):
 
     def process_response(self, request, response, spider):
         self.writeFile(response.url, "req_url.txt")
+        if response.status != 200:self.writeFile(url=response.url,fileName="E:\spilder\country_medical_insurance\country_medical_insurance\exception\exeu.ext")
         return response
+
+    def process_exception(self, request, exception, spider):
+        print("{}出现异常".format(request.url))
+        self.writeFile(url=request.url,fileName="E:\spilder\country_medical_insurance\country_medical_insurance\exception\exeu.ext")
+
 
 
     def writeFile(self,url,fileName):
