@@ -1,27 +1,28 @@
 from redis.client import Redis
-from redis.connection import Connection,ConnectionPool
+from redis.connection import ConnectionPool
+import country_medical_insurance.settings as cfg
+
+
 class Jedis():
 
-    """"
-        host:ip地址
-        port: 端口号
-        pwd:密码
-        db:数据库索引
-    """
-    def __init__(self, host=None, port=None, pwd=None, db=None):
-        if host is None:
-            host = "10.0.0.110"
-        if port is None:
-            port = 6479
-        if db is None:
-            db = 0
+    def __init__(self):
+        pool = ConnectionPool(host=cfg.REDIS_HOST, port=cfg.REDIS_PORT)
+        self.client = Redis(connection_pool=pool)
 
-        self.client = Redis(host='10.0.0.110',port=6379)
-        # self.client = StrictRedis(ConnectionPool(Connection(host=host,port=port,db=db,password=pwd)))
+    def page_query(self, redis_key, start, end):
+        '''
+        分页查询
+        :param redis_key: redis中的key名称
+        :param start:起始页
+        :param end:结束页
+        :return:
+        '''
+        return self.client.lrange(name=redis_key, start=start, end=end)
 
-    def addUrl(self, key, val):
-        r = self.client.set(key,val)
-        print(self.client.get(key))
+    def len(self, redis_key):
+        return self.client.llen(name=redis_key)
 
+    def lpush(self, key, val):
+        self.client.lpush(key, val)
 
 

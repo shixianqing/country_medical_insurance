@@ -55,7 +55,7 @@ class RedisSpiderCloseExtension(object):
         self.idle_count += 1
         self.idle_list.append(time.time())
         idle_list_len = len(self.idle_list)
-        print("进入spider_idle======={}--------idle_list=======>>{}".format(self.idle_count, self.idle_list))
+        logging.info("进入spider_idle======={}".format(self.idle_count))
 
         # 判断 redis 中是否存在关键key, 如果key 被用完，则key就会不存在
         if idle_list_len > 2 and spider.server.exists(spider.redis_key):

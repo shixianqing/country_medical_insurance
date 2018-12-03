@@ -32,9 +32,9 @@ class MedicineSpider(RedisSpider):
         if url == self.start_url:
             click_url = select.xpath("/html/body/table[4]/tbody/tr/td[6]/img/@onclick").extract_first()
             totalPage = int("".join(re.findall("[0-9]", click_url)))
-            for i in range(1, totalPage + 1):
+            for i in range(1, 1 + 1):
                 # yield Request(url=self.url_pattern.format(i), callback=self.parse, dont_filter=True)
-                Jedis().client.lpush(self.redis_key, self.url_pattern.format(i))
+                Jedis().lpush(key=self.redis_key, val=self.url_pattern.format(i))
 
         else:
             a_el_list = select.xpath("/html/body/table[2]/tbody/tr/td/p/a/@href").extract()
@@ -91,7 +91,7 @@ class ForeigeMedicineSpider(RedisSpider):
             totalPage = int("".join(re.findall("[0-9]", click_url)))
             for i in range(1, totalPage + 1):
                 # yield Request(url=self.url_pattern.format(i), callback=self.parse, dont_filter=True)
-                Jedis().client.lpush(self.redis_key, self.url_pattern.format(i))
+                Jedis().lpush(key=self.redis_key, val=self.url_pattern.format(i))
         else:
             a_el_list = select.xpath("/html/body/table[2]/tbody/tr/td/p/a/@href").extract()
             for a_el in a_el_list:
