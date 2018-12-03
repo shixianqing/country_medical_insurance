@@ -14,4 +14,8 @@ class CountryMedicalInsuranceItem(scrapy.Item):
    url = scrapy.Field()
 
 
+class ForeigeMedicialItem(CountryMedicalInsuranceItem):
+   pass
+
+
 

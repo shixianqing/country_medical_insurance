@@ -77,7 +77,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'country_medical_insurance.pipelines.ForeigeMedicinePipeline': 1,
-   'country_medical_insurance.pipelines.CountryMedicalInsurancePipeline': 400,
+   'country_medical_insurance.pipelines.CountryMedicalInsurancePipeline': 200,
     'scrapy_redis.pipelines.RedisPipeline': 300
 }
 
@@ -103,3 +103,14 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 REDIS_HOST = "10.0.0.110"
 REDIS_PORT = "6379"
+
+FAIL_LOG_PATH = "E:\spilder\country_medical_insurance\country_medical_insurance\exception\exeu.txt"
+
+import datetime
+curr_time = datetime.datetime.now()
+FOREIGE_MEDICINE_FILE = "F:/因朔枯资料/爬虫数据版本/药品/{}-{}-{}/进口药品-{year}" \
+                        "-{month}-{day}.xls".format(curr_time.year, curr_time.month, curr_time.day,
+                                                    year=curr_time.year, month=curr_time.month, day=curr_time.day)
+COUNTRY_MEDICINE_FILE = "F:/因朔枯资料/爬虫数据版本/药品/{}-{}-{}/国产药品-{year}" \
+                        "-{month}-{day}.xls".format(curr_time.year, curr_time.month, curr_time.day,
+                                                    year=curr_time.year, month=curr_time.month, day=curr_time.day)

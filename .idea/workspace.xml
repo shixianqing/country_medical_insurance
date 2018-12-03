@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="912761d6-99f2-41b2-a657-7a82c21cce27" name="Default Changelist" comment="" />
+    <list default="true" id="912761d6-99f2-41b2-a657-7a82c21cce27" name="Default Changelist" comment="fhfg">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/spiders/foreige_medicine_spider.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/spiders/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/spiders/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/spiders/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,46 +22,57 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/country_medical_insurance$fileUtil.coverage" NAME="fileUtil Coverage Results" MODIFIED="1542176627554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/util" />
-    <SUITE FILE_PATH="coverage/country_medical_insurance$main.coverage" NAME="main Coverage Results" MODIFIED="1542425011591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/spiders" />
+    <SUITE FILE_PATH="coverage/country_medical_insurance$fileUtil.coverage" NAME="fileUtil Coverage Results" MODIFIED="1543807539591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/util" />
+    <SUITE FILE_PATH="coverage/country_medical_insurance$pipelines.coverage" NAME="pipelines Coverage Results" MODIFIED="1542763326863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance" />
+    <SUITE FILE_PATH="coverage/country_medical_insurance$main.coverage" NAME="main Coverage Results" MODIFIED="1543398188417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/spiders" />
     <SUITE FILE_PATH="coverage/country_medical_insurance$medicine_spider.coverage" NAME="medicine_spider Coverage Results" MODIFIED="1542188083333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/spiders" />
+    <SUITE FILE_PATH="coverage/country_medical_insurance$insertItemData.coverage" NAME="insertItemData Coverage Results" MODIFIED="1543211684573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/util" />
     <SUITE FILE_PATH="coverage/country_medical_insurance$test.coverage" NAME="test Coverage Results" MODIFIED="1542183334188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/country_medical_insurance/spiders" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1439213331">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cfg" value="1" />
-          <entry key="py" value="53" />
+          <entry key="cfg" value="4" />
+          <entry key="ext" value="5" />
+          <entry key="py" value="144" />
           <entry key="pyi" value="1" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Ini" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Python" value="53" />
+          <entry key="Ini" value="4" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="Python" value="144" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2795" />
+          <entry key="cfg" value="4" />
+          <entry key="ext" value="32" />
+          <entry key="py" value="7460" />
+          <entry key="txt" value="240" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2791" />
+          <entry key="Ini" value="4" />
+          <entry key="PLAIN_TEXT" value="272" />
+          <entry key="Python" value="7456" />
           <entry key="SQL" value="4" />
         </counts>
       </usages-collector>
@@ -59,61 +83,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/country_medical_insurance/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+            <state relative-caret-position="1525">
+              <caret line="61" column="40" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="40" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
-                <marker date="1542425004737" expanded="true" signature="894:989" ph="..." />
-                <marker date="1542425004737" expanded="true" signature="1015:1016" ph="..." />
-                <marker date="1542425004737" expanded="true" signature="1016:1021" ph="..." />
+                <element signature="e#24#82#0" expanded="true" />
+                <marker date="1543402200225" expanded="true" signature="1056:1151" ph="..." />
+                <marker date="1543402200225" expanded="true" signature="1177:1178" ph="..." />
+                <marker date="1543402200225" expanded="true" signature="1178:1179" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py">
+        <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+            <state relative-caret-position="275">
+              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/foreige_medicine_spider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/country_medical_insurance/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="16" column="19" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="19" />
-              <folding>
-                <marker date="1542333402382" expanded="true" signature="916:917" ph="..." />
+                <marker date="1543821478937" expanded="true" signature="137:142" ph="..." />
+                <marker date="1543821478937" expanded="true" signature="1486:1488" ph="..." />
+                <marker date="1543821478937" expanded="true" signature="1486:1816" ph="..." />
               </folding>
             </state>
           </provider>
@@ -122,20 +116,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/country_medical_insurance/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
-              <folding>
-                <marker date="1542333247345" expanded="true" signature="216:245" ph="..." />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlrd/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="115" selection-start-line="115" selection-end-line="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/country_medical_insurance/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="106" column="13" selection-start-line="106" selection-end-line="106" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ftplib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="630" column="32" lean-forward="true" selection-start-line="630" selection-start-column="32" selection-end-line="630" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="75">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -143,17 +161,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/country_medical_insurance/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+            <state relative-caret-position="129">
+              <caret line="133" column="15" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="15" />
+              <folding>
+                <marker date="1543753937986" expanded="true" signature="4139:4145" ph="..." />
+                <marker date="1543753937986" expanded="true" signature="5374:5517" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py">
+        <entry file="file://$PROJECT_DIR$/country_medical_insurance/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+            <state relative-caret-position="-571">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+              <folding>
+                <element signature="e#194#239#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,40 +194,68 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>parse</find>
-      <find>COOKIES</find>
-      <find>DOWNLOADER_MIDDLEWARES</find>
-      <find>DownloaderMiddlewareManager</find>
-      <find>HtmlResponse</find>
-      <find>data</find>
-      <find>pi</find>
-      <find>'</find>
-      <find>DOWNLOADER_MIDDLEWARES_BASE</find>
-      <find>%s</find>
-      <find>CountryMedicalInsurancePipeline</find>
-      <find>NULL</find>
-      <find>SCHEDULER_PERSIST</find>
+      <find>http://app1.sfda.gov.cn/datasearchcnda/face3/content.jsp?tableId=25&amp;tableName=TABLE25&amp;tableView=%E5%9B%BD%E4%BA%A7%E8%8D%AF%E5%93%81&amp;Id=40947</find>
+      <find>RedisSpider</find>
+      <find>2975</find>
+      <find>71739</find>
+      <find>141995</find>
+      <find>47658</find>
+      <find>179867</find>
+      <find>148353</find>
+      <find>177452</find>
+      <find>86042</find>
+      <find>116254</find>
+      <find>6231</find>
+      <find>150577</find>
+      <find>5586</find>
+      <find>178019</find>
+      <find>73258</find>
+      <find>168809</find>
+      <find>iter</find>
+      <find>_handle_downloader_output</find>
+      <find>mkdir</find>
+      <find>set_row</find>
+      <find>ad</find>
+      <find>save</find>
+      <find>write</find>
+      <find>UserAgent</find>
+      <find>`</find>
+      <find>DOWNLOADER</find>
+      <find>152904713761213296322795806604</find>
+      <find>project_remove</find>
+      <find>passiveserver</find>
     </findStrings>
     <replaceStrings>
       <replace>'%s'</replace>
       <replace>%s</replace>
     </replaceStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/middlewares/CustomDownloaderMiddleware.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/spiders/test.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/dbtool.py" />
-        <option value="$PROJECT_DIR$/country_medical_insurance/items.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/spiders/time_out_url.txt" />
         <option value="$PROJECT_DIR$/country_medical_insurance/spiders/url.txt" />
-        <option value="$PROJECT_DIR$/country_medical_insurance/pipelines.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/spiders/req_url.txt" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/spiders/time_out_url1.txt" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/exception/exeu.ext" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/util/insertItemData.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/spiders/foreige_medicine_spider.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py" />
+        <option value="$PROJECT_DIR$/scrapy.cfg" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gerapy/server/core/views.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/spiders/main.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/middlewares.py" />
-        <option value="$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/pipelines.py" />
         <option value="$PROJECT_DIR$/country_medical_insurance/settings.py" />
+        <option value="$PROJECT_DIR$/country_medical_insurance/items.py" />
       </list>
     </option>
   </component>
@@ -213,17 +266,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-272" />
-    <option name="y" value="26" />
+    <option name="x" value="-319" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,22 +294,17 @@
               <item name="country_medical_insurance" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="country_medical_insurance" type="b2602c69:ProjectViewProjectNode" />
-              <item name="country_medical_insurance" type="462c0819:PsiDirectoryNode" />
-              <item name="country_medical_insurance" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Selec&#9;FILE&#9;file://C:/Users/shixianqing/AppData/Local/Programs/Python/Python36/Lib/site-packages/parsel/selector.py" />
+    <property name="SearchEverywhereHistoryKey" value="FilePipe&#9;null&#9;null&#10;FilePip&#9;null&#9;null&#10;ExecutionEngine&#9;null&#9;null&#10;engine&#9;null&#9;null&#10;DownloaderMiddleware&#9;FILE&#9;file://C:/Users/shixianqing/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/downloadermiddlewares&#10;Crawler&#9;null&#9;null&#10;DownloadTimeoutMiddleware&#9;null&#9;null&#10;Middleware&#9;FILE&#9;file://C:/Users/shixianqing/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/downloader/middleware.py&#10;Engine&#9;null&#9;null&#10;htmlRes&#9;null&#9;null&#10;Selec&#9;FILE&#9;file://C:/Users/shixianqing/AppData/Local/Programs/Python/Python36/Lib/site-packages/parsel/selector.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../scrapy_redis_master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hickey" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -281,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.fileUtil">
     <configuration name="fileUtil" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="country_medical_insurance" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -296,6 +343,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="insertItemData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="country_medical_insurance" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/country_medical_insurance/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/country_medical_insurance/util/insertItemData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -348,7 +417,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pipelines" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="country_medical_insurance" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -356,12 +425,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/country_medical_insurance/spiders" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/country_medical_insurance" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/country_medical_insurance/spiders/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/country_medical_insurance/pipelines.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -374,14 +443,16 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.fileUtil" />
       <item itemvalue="Python.medicine_spider" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.pipelines" />
+      <item itemvalue="Python.insertItemData" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.medicine_spider" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.fileUtil" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.insertItemData" />
+        <item itemvalue="Python.pipelines" />
+        <item itemvalue="Python.medicine_spider" />
       </list>
     </recent_temporary>
   </component>
@@ -396,26 +467,65 @@
       <option name="presentableId" value="Default" />
       <updated>1542161072956</updated>
     </task>
+    <task id="LOCAL-00001" summary="fhfg">
+      <created>1542695682156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542695682156</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fhfg">
+      <created>1542695723025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542695723025</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fhfg">
+      <created>1542763435813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542763435813</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fhfg">
+      <created>1543027384818</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543027384819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.81014305" visible="true" weight="0.25799572" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.61620796" visible="true" weight="0.2771855" />
+      <window_info id="Structure" order="1" sideWeight="0.38379204" side_tool="true" visible="true" weight="0.2771855" />
       <window_info id="Favorites" order="2" sideWeight="0.18985696" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37201735" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.16594361" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28990227" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29098806" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.46312365" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.46254072" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -429,6 +539,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fhfg" />
+    <option name="LAST_COMMIT_MESSAGE" value="fhfg" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -452,245 +566,345 @@
         <watch expression="p.text" />
         <watch expression="p._roor.text" />
         <watch expression="p._root.text" />
+        <watch expression="bool(fileArr)" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/twisted/internet/stdio.py">
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/289635018/_collections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="24" />
+        <state relative-caret-position="193">
+          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/289635018/_io.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/contrib/downloadermiddleware/httpcompression.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/contrib/downloadermiddleware/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/contrib/downloadermiddleware/robotstxt.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1">
-          <caret line="1214" column="12" selection-start-line="1214" selection-start-column="12" selection-end-line="1214" selection-end-column="12" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/io.pyi">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/downloadermiddlewares/downloadtimeout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="75" column="12" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="12" />
+        <state relative-caret-position="375">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/gzip.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/utils/engine.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-382">
-          <caret line="122" column="8" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+        <state relative-caret-position="500">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/spiders/crawl.py">
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/time_out_url1.txt" />
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/289635018/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="88" column="13" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="1278" selection-start-line="1278" selection-end-line="1278" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/urllib3/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/middlewares/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/middlewares/CustomDownloaderMiddleware.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/downloader/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/utils/trackref.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="124">
+          <caret line="265" column="4" selection-start-line="265" selection-start-column="4" selection-end-line="265" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/http/request/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="300">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/cmdline.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/downloader/handlers/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        <state relative-caret-position="415">
+          <caret line="64" column="39" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/289635018/builtins.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/twisted/internet/defer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="3706" column="8" selection-start-line="3706" selection-start-column="8" selection-end-line="3706" selection-end-column="8" />
+        <state relative-caret-position="-1704">
+          <caret line="512" column="8" selection-start-line="512" selection-start-column="8" selection-end-line="512" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/parsel/selector.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/utils/defer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="25">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymysql/cursors.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/spidermw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="150" column="8" selection-start-line="150" selection-start-column="8" selection-end-line="150" selection-end-column="8" />
+        <state relative-caret-position="315">
+          <caret line="65" column="34" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tarfile.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/downloader/middleware.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3849">
-          <caret line="2026" column="8" selection-start-line="2026" selection-start-column="8" selection-end-line="2026" selection-end-column="8" />
+        <state relative-caret-position="240">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/pipelines/files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        <state relative-caret-position="575">
+          <caret line="312" column="24" selection-start-line="312" selection-start-column="24" selection-end-line="312" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/insertItemData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/downloader/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="135" column="17" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/289635018/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="326" column="20" selection-start-line="326" selection-start-column="20" selection-end-line="326" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlwt/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlwt/Worksheet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="1034" column="31" selection-start-line="1034" selection-start-column="26" selection-end-line="1034" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlwt/Workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="363" column="37" selection-start-line="363" selection-start-column="37" selection-end-line="363" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlsxwriter/workbook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38486">
+          <caret line="1714" column="42" selection-start-line="1714" selection-start-column="38" selection-end-line="1714" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/exception/exeu.ext" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/engine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/twisted/internet/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="671" selection-start-line="671" selection-end-line="671" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/twisted/internet/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="1272" column="36" selection-start-line="1272" selection-start-column="36" selection-end-line="1272" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/scrapy/core/scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/test.py" />
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/foreige_medicine_spider.py" />
     <entry file="file://$PROJECT_DIR$/country_medical_insurance/dbtool.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="125" column="8" selection-start-line="125" selection-start-column="8" selection-end-line="125" selection-end-column="8" />
+        <state relative-caret-position="2700">
+          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
           <folding>
             <element signature="e#45#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/pymysql/err.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gerapy/server/core/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="99" column="28" selection-start-line="99" selection-start-column="28" selection-end-line="99" selection-end-column="28" />
+        <state relative-caret-position="6575">
+          <caret line="287" column="55" selection-start-line="287" selection-start-column="55" selection-end-line="287" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/twisted/internet/defer.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="653" selection-start-line="653" selection-end-line="653" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="475">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="44" />
           <folding>
-            <marker date="1542333247345" expanded="true" signature="216:245" ph="..." />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/url.txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/django/core/handlers/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-155574">
-          <caret line="2638" column="44" selection-start-line="2638" selection-start-column="44" selection-end-line="2638" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/foreige_medicine_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="2525">
+          <caret line="111" column="49" selection-start-line="111" selection-start-column="49" selection-end-line="111" selection-end-column="49" />
           <folding>
-            <element signature="e#24#37#0" expanded="true" />
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/redisUtil.py">
+    <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/main.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="498">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlwt/CompoundDoc.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="356">
+          <caret line="267" column="34" lean-forward="true" selection-start-line="267" selection-start-column="34" selection-end-line="267" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/pipelines.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/xlrd/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="19" />
-          <folding>
-            <marker date="1542333402382" expanded="true" signature="916:917" ph="..." />
-          </folding>
+        <state relative-caret-position="423">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/country_medical_insurance/middlewares.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/ftplib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="116" column="37" selection-start-line="116" selection-start-column="37" selection-end-line="116" selection-end-column="37" />
+        <state relative-caret-position="145">
+          <caret line="630" column="32" lean-forward="true" selection-start-line="630" selection-start-column="32" selection-end-line="630" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/chrome/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2381">
+          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/medicine_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+        <state relative-caret-position="1525">
+          <caret line="61" column="40" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="40" />
           <folding>
-            <element signature="e#24#37#0" expanded="true" />
-            <marker date="1542425004737" expanded="true" signature="894:989" ph="..." />
-            <marker date="1542425004737" expanded="true" signature="1015:1016" ph="..." />
-            <marker date="1542425004737" expanded="true" signature="1016:1021" ph="..." />
+            <element signature="e#24#82#0" expanded="true" />
+            <marker date="1543402200225" expanded="true" signature="1056:1151" ph="..." />
+            <marker date="1543402200225" expanded="true" signature="1177:1178" ph="..." />
+            <marker date="1543402200225" expanded="true" signature="1178:1179" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/exception/exeu.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/util/fileUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1543821478937" expanded="true" signature="137:142" ph="..." />
+            <marker date="1543821478937" expanded="true" signature="1486:1488" ph="..." />
+            <marker date="1543821478937" expanded="true" signature="1486:1816" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/country_medical_insurance/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        <state relative-caret-position="204">
+          <caret line="106" column="13" selection-start-line="106" selection-end-line="106" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="133" column="15" selection-start-line="133" selection-start-column="14" selection-end-line="133" selection-end-column="15" />
+          <folding>
+            <marker date="1543753937986" expanded="true" signature="4139:4145" ph="..." />
+            <marker date="1543753937986" expanded="true" signature="5374:5517" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-571">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          <folding>
+            <element signature="e#194#239#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/country_medical_insurance/spiders/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

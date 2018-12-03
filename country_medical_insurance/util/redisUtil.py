@@ -10,13 +10,13 @@ class Jedis():
     """
     def __init__(self, host=None, port=None, pwd=None, db=None):
         if host is None:
-            host = "localhost"
+            host = "10.0.0.110"
         if port is None:
-            port = 6379
+            port = 6479
         if db is None:
             db = 0
 
-        self.client = Redis(host='localhost',port=6379)
+        self.client = Redis(host='10.0.0.110',port=6379)
         # self.client = StrictRedis(ConnectionPool(Connection(host=host,port=port,db=db,password=pwd)))
 
     def addUrl(self, key, val):
