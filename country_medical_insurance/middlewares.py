@@ -131,8 +131,8 @@ class CustomDownloaderMiddleware(object):
         time.sleep(2)
         html = spider.browser.page_source
         selector = Selector(text=html)
-        title = selector.xpath('//*[@id="content"]/div/div/table[1]/tbody/tr[1]/td/div[1]').extract_first()
-        pageNo = selector.xpath('//*[@id="content"]/table[4]/tbody/tr/td[1]').extract_first()
+        title = selector.xpath('/html/body/div/div/table[1]/tbody/tr[1]/td/div[1]/text()').extract_first()
+        pageNo = selector.xpath('/html/body/table[4]/tbody/tr/td[1]/text()').extract_first()
         if not title and not pageNo:
             print("{}--------页面没有渲染成功".format(url))
             return request
