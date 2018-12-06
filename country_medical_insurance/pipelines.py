@@ -6,7 +6,7 @@
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 import country_medical_insurance.dbtool as db
-from country_medical_insurance.util.fileUtil import writeFile
+from country_medical_insurance.util.fileUtil import writeFile, getCustForm,writeDataIntoTxt
 from country_medical_insurance.util.fileUtil import writeDataIntoExcel
 from scrapy.exceptions import DropItem
 from scrapy.utils.project import get_project_settings
@@ -23,13 +23,15 @@ class CountryMedicalInsurancePipeline(object):
 
         info = item["info"]
         if not info:
-            writeFile(url=item["url"],fileName=setting.get("FAIL_LOG_PATH"))
+            writeFile(url=item["url"], fileName=setting.get("FAIL_LOG_PATH"))
             raise DropItem("未获取到国产器械信息，丢弃。{}".format(item["url"]))
 
-        # if isinstance(item, ForeigeMedicialItem):
-        #     self.process_foreige_medicine(item)
-        # else:
-        #     self.process_country_medicine(item)
+        if isinstance(item, ForeigeMedicialItem):
+            # self.process_foreige_medicine(item)
+            self.trans_form(dataList=info, index=14)
+        else:
+            # self.process_country_medicine(item)
+            self.trans_form(dataList=info, index=4)
 
         # sql = "insert into country_medicine(allow_no,medicine_name,en_name,trade_name,form,medicine_size,prod_unit,prod_addr," \
         #       "prod_type,allow_date,origin_allow_no,medicine_ben_code,code_remark) " \
@@ -55,7 +57,6 @@ class CountryMedicalInsurancePipeline(object):
             print("国产药品写入文件异常-------{}".format(e))
             writeFile(url=item["url"], fileName=setting.get("FAIL_LOG_PATH"))
 
-
     def process_foreige_medicine(self, item):
         print("-----------------------处理进口药品------------------")
         title = ["注册证号", "原注册证号", "注册证号备注", "分包装批准文号", "公司名称（中文）", "公司名称（英文）",
@@ -65,12 +66,18 @@ class CountryMedicalInsurancePipeline(object):
                  "厂商国家/地区（英文）", "发证日期	", "有效期截止日", "分包装企业名称", "分包装企业地址", "分包装文号批准日期",
                  "分包装文号有效期截止日", "产品类别", "药品本位码", "药品本位码备注	"]
         try:
-            writeDataIntoExcel(data=item["info"], tilte=title,fileName=setting.get("FOREIGE_MEDICINE_FILE"))
+            writeDataIntoExcel(data=item["info"], tilte=title, fileName=setting.get("FOREIGE_MEDICINE_FILE"))
             print("------------国产药品写入文件成功--------")
         except BaseException as e:
             print("国产药品写入文件异常-------{}".format(e))
             writeFile(url=item["url"], fileName=setting.get("FAIL_LOG_PATH"))
 
+    def trans_form(self, dataList, index):
+        form = dataList[index]
+        flag, val = getCustForm(form)
+        if flag:
+            dataList[index] = val
+        else:
+            writeDataIntoTxt(dataList)
 
-
-
+        dataList.extend([form])

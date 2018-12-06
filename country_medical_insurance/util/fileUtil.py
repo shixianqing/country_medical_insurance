@@ -2,6 +2,12 @@ from xlrd import open_workbook
 from xlwt import Workbook
 from xlutils.copy import copy
 import os
+import pandas as pd
+import re
+
+df = pd.read_excel(os.path.abspath('../form_rule.xlsx'))
+rules = df.set_index('name').to_dict()['alias']
+
 
 def read_time_out_url():
     lines = []
@@ -64,3 +70,40 @@ def lastIndexOf(origin_str, s):
         if positon == -1:
             return last_position
         last_position = positon
+
+
+def getCustForm(form):
+    '''
+    获取自定义剂型
+    :return:
+    '''
+    tran_form = mask_punctuation(form)
+    for key, value in rules.items():
+        for val in value.split('|'):
+            # alias = mask_punctuation(val)
+            val = val.replace('\n', '').replace('\r', '').replace('\t', '')
+            if form == val or val in tran_form:
+                return True, key
+
+    return False,
+
+
+punc_sub_pat = re.compile('[^\u4e00-\u9fa5a-zA-Z0-9]')
+punc_sub_mask_digit_pat = re.compile('[^\u4e00-\u9fa5a-zA-Z]')
+def mask_punctuation(w, mask_digit=False):
+    if mask_digit:
+        return [str for str in punc_sub_pat.sub(" ", w).split(" ") if str !='']
+    else:
+        return [str for str in punc_sub_mask_digit_pat.sub(" ",w).split(" ") if str !='']
+
+
+
+def writeDataIntoTxt(data):
+    with open(os.path.abspath('../manual_handler.txt'), mode='a', encoding='utf-8') as file:
+        file.write('\t\t\t'.join(data))
+        file.write('\n')
+
+
+
+
+    print(getCustForm('丸剂(水丸)'))
