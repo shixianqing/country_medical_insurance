@@ -13,11 +13,12 @@ class MysqlPool():
     __pool = None
 
     def __init__(self, conf_name=None):
-        self.db_host = '116.62.163.101'
+        self.db_host = '47.111.3.199'
+        # self.db_host = '116.62.163.101'
         self.db_port = int(3306)
-        self.user = 'scrapyadmin'
-        self.password = 'Scrapy123!'
-        self.db = 'scrapy_dev' # claim_test
+        self.user = 'claim_demo2'
+        self.password = 'xiya3238654!'
+        self.db = 'claim_demo2' # claim_test
         # self.user = 'claim_prod'
         # self.password = 'Password123!'
         # self.db = 'claim_test' # claim_test
@@ -98,6 +99,16 @@ class MysqlPool():
         return result
 
     def insertMany(self, sql, values):
+        """
+        @summary: 向数据表插入多条记录
+        @param sql:要插入的ＳＱＬ格式
+        @param values:要插入的记录数据tuple(tuple)/list[list]
+        @return: count 受影响的行数
+        """
+        count = self._cursor.executemany(sql, values)
+        return count
+
+    def batchUpdate(self, sql, values):
         """
         @summary: 向数据表插入多条记录
         @param sql:要插入的ＳＱＬ格式

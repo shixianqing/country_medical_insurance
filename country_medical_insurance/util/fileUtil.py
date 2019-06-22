@@ -85,7 +85,7 @@ def getCustForm(form):
             if form == val or val in tran_form:
                 return True, key
 
-    return False,
+    return False, ''
 
 
 punc_sub_pat = re.compile('[^\u4e00-\u9fa5a-zA-Z0-9]')
@@ -104,6 +104,3 @@ def writeDataIntoTxt(data):
         file.write('\n')
 
 
-
-
-    print(getCustForm('丸剂(水丸)'))

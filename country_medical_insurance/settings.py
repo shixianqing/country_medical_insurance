@@ -62,7 +62,6 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-    'country_medical_insurance.middlewares.CountryMedicalInsuranceDownloaderMiddleware': None,
     'country_medical_insurance.middlewares.CustomDownloaderMiddleware': 1
 }
 
@@ -80,7 +79,7 @@ IDLE_NUMBER = 24  # 配置空闲持续时间单位为 360个 ，一个时间单�
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     # 'country_medical_insurance.pipelines.ForeigeMedicinePipeline': 1,
-    'country_medical_insurance.pipelines.CountryMedicalInsurancePipeline': 200,
+    # 'country_medical_insurance.pipelines.CountryMedicalInsurancePipeline': 200,
     'scrapy_redis.pipelines.RedisPipeline': 300
 }
 
